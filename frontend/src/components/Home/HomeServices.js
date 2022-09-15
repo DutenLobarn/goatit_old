@@ -114,7 +114,7 @@ export default function HomeServices() {
                     className="p-5 h-14 w-14 h-16 w-16 md:p-5 h-16 w-16 md:p-[14px]"
                   />
                 </div>
-                <h4 className="text-xl mt-14 mb-4 md:text-2xl md:mt-11">
+                <h4 className="text-xl mt-12 mb-4 md:text-2xl md:mt-11">
                   Hire a Consultant
                 </h4>
                 <p className="font-light md:text-xl mb-16 md:mb-16 sm:mb-16">
@@ -122,7 +122,7 @@ export default function HomeServices() {
                 </p>
                 <Link
                   to="/services/consultant"
-                  className="text-start mx-auto mb-2 hover:text-orange-700 md:mt-0 sm:mt-6"
+                  className="text-start mx-auto hover:text-orange-700 md:mt-0 sm:mt-6"
                 >
                   Learn more
                   <FontAwesomeIcon

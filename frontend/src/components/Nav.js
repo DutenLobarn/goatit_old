@@ -83,7 +83,7 @@ export default function Nav() {
                 <Link to="/">Home</Link>
               </li>
               <li className="my-4 uppercase text-2xl text-fuchsia-900">
-                <p to="/services">Services</p>
+                <p to="/services">Services ↓</p>
               </li>
               <li
                 className="border-b border-gray-400 my-4 uppercase text-fuchsia-900 hover:text-orange-700"
