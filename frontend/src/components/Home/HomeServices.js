@@ -19,7 +19,7 @@ export default function HomeServices() {
           className="carousel slide relative carousel-dark"
           data-bs-ride="carousel"
         >
-          <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-20">
+          {/* <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-20">
             <button
               type="button"
               data-bs-target="#carouselExampleCaptions"
@@ -40,98 +40,93 @@ export default function HomeServices() {
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
-          </div>
+          </div> */}
 
           <div className="carousel-inner relative w-full overflow-hidden h-screen">
             <h3 className="text-3xl md:text-5xl my-12 text-orange-500 font-semibold text-center mb-20">
               OUR SERVICES
             </h3>
 
-            <div className="carousel-item active relative float-left w-full">
+            <Link
+              to="/services/apps"
+              className="carousel-item active relative float-left w-full"
+            >
               <div className="flex flex-col text-center text-fuchsia-900 font-semibold bg-white h-96 w-3/4 md:w-2/4 sm:w-2/4 mx-auto rounded-3xl">
-                <div className="flex items-center bg-blue-100 w-fit h-full p-2 rounded-full mx-auto mt-8">
-                  <FontAwesomeIcon
-                    icon={faLaptop}
-                    className="h-12 w-16 mr-3 md:mr-1"
-                  />
+                <div className="flex items-center bg-blue-100 w-fit h-[120px] p-2 rounded-full mx-auto mt-8">
+                  <FontAwesomeIcon icon={faLaptop} className="h-12 w-16 mr-3" />
                   <FontAwesomeIcon
                     icon={faMobile}
                     className="ml-2 h-7 h-8 md:ml-1"
                   />
                 </div>
-                <h4 className="text-xl md:text-2xl mt-12 mb-4">
-                  Websites and Mobile Apps
+                <h4 className="text-xl md:text-2xl mt-6 mb-5">
+                  Websites & Mobile Apps
                 </h4>
-                <p className="font-light md:text-xl mb-16">
+                <p className="font-light md:text-xl mb-10 px-4">
                   We design and create custom made websites and mobile apps.
                 </p>
-                <Link
-                  to="/services/apps"
-                  className="text-start mx-auto mb-1 hover:text-orange-700"
-                >
+                <p className="text-start mx-auto mb-6 hover:text-orange-700">
                   Learn more
                   <FontAwesomeIcon
                     icon={faArrowRight}
                     className="ml-2 text-lg"
                   />
-                </Link>
+                </p>
               </div>
-            </div>
+            </Link>
 
-            <div className="carousel-item relative float-left w-full">
+            <Link
+              to="/services/system"
+              className="carousel-item relative float-left w-full"
+            >
               <div className="flex flex-col text-center text-fuchsia-900 font-semibold bg-white h-96 w-3/4 sm:w-2/4 mx-auto rounded-3xl">
-                <div className="flex items-center bg-blue-100 w-fit h-full p-2 rounded-full mx-auto mt-8">
+                <div className="flex items-center bg-blue-100 w-fit p-1 rounded-full mx-auto mt-8">
                   <FontAwesomeIcon
                     icon={faDisplay}
-                    className="p-6 md:p-4  h-14 w-14"
+                    className="px-7 h-28 w-14"
                   />
                 </div>
-                <h4 className="text-xl md:text-2xl mt-12 mb-4">
-                  System Development
-                </h4>
-                <p className="font-light md:text-xl mb-16">
+                <h4 className="text-xl md:text-2xl mt-6">System Development</h4>
+                <p className="font-light md:text-xl mb-10 mt-5 px-4">
                   We develop systems after your needs using leading
                   technologies.
                 </p>
-                <Link
-                  to="/services/system"
-                  className="text-start mx-auto mb-2 hover:text-orange-700 md:mb-1"
-                >
+                <p className="text-start mx-auto mb-6 hover:text-orange-700 md:mb-1">
                   Learn more
                   <FontAwesomeIcon
                     icon={faArrowRight}
                     className="ml-2 text-lg"
                   />
-                </Link>
+                </p>
               </div>
-            </div>
+            </Link>
 
-            <div className="carousel-item relative float-left w-full">
+            <Link
+              to="/services/consultant"
+              className="carousel-item relative float-left w-full"
+            >
               <div className="flex flex-col text-center text-fuchsia-900 font-semibold bg-white h-96 w-3/4 md:w-2/4 sm:w-2/4 mx-auto rounded-3xl">
                 <div className="flex items-center bg-blue-100 p-2 rounded-full mx-auto mt-8">
                   <FontAwesomeIcon
                     icon={faPeopleCarryBox}
-                    className="p-5 h-14 w-14 h-16 w-16 md:p-5 h-16 w-16 md:p-[14px]"
+                    className="p-5 h-16 w-16 w-16 md:p-5 h-16 w-16"
                   />
                 </div>
-                <h4 className="text-xl mt-12 mb-4 md:text-2xl md:mt-11">
+                <h4 className="text-xl mt-6 mb-4 md:text-2xl">
                   Hire a Consultant
                 </h4>
-                <p className="font-light md:text-xl mb-16 md:mb-16 sm:mb-16">
+                <p className="font-light md:text-xl mb-12 px-4 sm:mb-10">
                   We provide your buisness with extra labour.
                 </p>
-                <Link
-                  to="/services/consultant"
-                  className="text-start mx-auto hover:text-orange-700 md:mt-0 sm:mt-6"
-                >
+                <p className="text-start mx-auto hover:text-orange-700">
                   Learn more
                   <FontAwesomeIcon
                     icon={faArrowRight}
                     className="ml-2 text-lg"
                   />
-                </Link>
+                </p>
               </div>
-            </div>
+            </Link>
           </div>
 
           <button
@@ -168,46 +163,49 @@ export default function HomeServices() {
         </h3>
 
         <div className="h-screen flex">
-          <div className="flex flex-col text-center text-fuchsia-900 font-semibold bg-white h-96 w-1/4 mx-auto rounded-3xl hover:drop-shadow-2xl">
+          <Link
+            to="/services/apps"
+            className="flex flex-col text-center text-fuchsia-900 font-semibold bg-white h-96 w-1/4 mx-auto rounded-3xl hover:drop-shadow-2xl"
+          >
             <div className="flex items-center bg-blue-100 p-2 rounded-full mx-auto mt-8">
               <FontAwesomeIcon icon={faLaptop} className="mr-2 h-28 w-16" />
               <FontAwesomeIcon icon={faMobile} className="ml-2 h-8 w-8" />
             </div>
             <h4 className="text-xl mt-8 mb-4 xl:text-2xl">
-              Websites and Mobile Apps
+              Websites & Mobile Apps
             </h4>
-            <p className="font-light mb-12 xl:text-lg lg:mb-14">
+            <p className="font-light mb-12 px-4 xl:text-lg xl:mb-11 lg:mb-8">
               We design and create custom made websites and mobile apps.
             </p>
-            <Link
-              to="/services/apps"
-              className="text-start mx-auto mb-2 hover:text-orange-700"
-            >
+            <p className="text-start mx-auto mb-2 hover:text-orange-700">
               Learn more
               <FontAwesomeIcon icon={faArrowRight} className="ml-2 text-lg" />
-            </Link>
-          </div>
+            </p>
+          </Link>
 
-          <div className=" flex flex-col text-center text-fuchsia-900 font-semibold bg-white h-96 w-1/4 mx-auto rounded-3xl hover:drop-shadow-2xl">
+          <Link
+            to="/services/system"
+            className="flex flex-col text-center text-fuchsia-900 font-semibold bg-white h-96 w-1/4 mx-auto rounded-3xl hover:drop-shadow-2xl"
+          >
             <div className="flex items-center bg-blue-100 p-2 rounded-full mx-auto mt-8">
               <FontAwesomeIcon icon={faDisplay} className="p-6 h-16 w-16" />
             </div>
             <h4 className="text-xl mt-8 mb-4 xl:text-2xl">
               System Development
             </h4>
-            <p className="font-light mb-12 text-lg xl:text-lg lg:mb-5">
+            <p className="font-light mb-12 text-lg px-4 xl:text-lg xl:mb-3 lg:mb-5">
               We develop systems after your needs using leading technologies.
             </p>
-            <Link
-              to="/services/system"
-              className="text-start mx-auto mb-2 hover:text-orange-700 xl:mt-8"
-            >
+            <p className="text-start mx-auto mb-2 hover:text-orange-700 xl:mt-8">
               Learn more
               <FontAwesomeIcon icon={faArrowRight} className="ml-2 text-lg" />
-            </Link>
-          </div>
+            </p>
+          </Link>
 
-          <div className=" flex flex-col text-center text-fuchsia-900 font-semibold bg-white h-96 w-1/4 mx-auto rounded-3xl hover:drop-shadow-2xl">
+          <Link
+            to="/services/consultant"
+            className=" flex flex-col text-center text-fuchsia-900 font-semibold bg-white h-96 w-1/4 mx-auto rounded-3xl hover:drop-shadow-2xl"
+          >
             <div className="flex items-center bg-blue-100 p-2 rounded-full mx-auto mt-8">
               <FontAwesomeIcon
                 icon={faPeopleCarryBox}
@@ -215,17 +213,14 @@ export default function HomeServices() {
               />
             </div>
             <h4 className="text-xl mt-8 mb-4 xl:text-2xl">Hire a Consultant</h4>
-            <p className="font-light mb-12 text-lg xl:text-lg">
+            <p className="font-light mb-5 text-lg px-4 xl:text-lg xl:mb-10">
               We provide your buisness with the extra labour u need.
             </p>
-            <Link
-              to="/services/consultant"
-              className="text-start mx-auto mb-2 hover:text-orange-700"
-            >
+            <p className="text-start mx-auto mb-2 hover:text-orange-700">
               Learn more
               <FontAwesomeIcon icon={faArrowRight} className="ml-2 text-lg" />
-            </Link>
-          </div>
+            </p>
+          </Link>
         </div>
       </section>
     </>

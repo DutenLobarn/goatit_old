@@ -4,8 +4,6 @@ import "tw-elements";
 import HeroLaptop from "../../assets/hero1.png";
 import HeroGuy from "../../assets/heroGuy.png";
 
-console.log(window.location.href);
-
 export default function Hero() {
   return (
     <div>
@@ -17,10 +15,10 @@ export default function Hero() {
         >
           <div className="carousel-inner w-full overflow-hidden h-3/6 my-6 lg:h-full lg:w-5/6">
             <div className="carousel-item active float-left w-screen xl:mt-10 lg:w-full lg:mt-20 lg:ml-0 md:w-7/12 md:ml-40 sm:w-2/3 sm:ml-28">
-              <img className="px-4 mt-12" src={HeroLaptop} alt="Goat bg img" />
+              <img className="px-6 mt-12" src={HeroLaptop} alt="Hero laptop" />
             </div>
             <div className="carousel-item float-left w-screen 2xl:-mt-14 xl:-mt-2 lg:w-full lg:mt-10 lg:ml-0 md:w-7/12 md:ml-40 sm:w-2/3 sm:ml-28">
-              <img src={HeroGuy} alt="Goat bg img" />
+              <img src={HeroGuy} alt="Hero guy" />
             </div>
           </div>
           <div className="h-2/5 flex flex-col justify-center items-center text-fuchsia-900 text-xl lg:h-full lg:w-3/5 lg:items-start lg:text-3xl lg:pl-16 xl:pl-32">

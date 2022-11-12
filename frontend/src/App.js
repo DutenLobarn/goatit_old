@@ -1,7 +1,7 @@
 import "./styles/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
-import Footer from "./components/Footer";
+import FooterOption2 from "./components/FooterOption2";
 import Home from "./components/Home/Home";
 import ServicesApps from "./components/Services/ServicesApps";
 import ServicesSystem from "./components/Services/ServicesSystem";
@@ -9,10 +9,12 @@ import ServicesConsultant from "./components/Services/ServicesConsultant";
 import Portfolio from "./components/Portfolio";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="bg-gradient-to-r from-blue-100 to-blue-400 h-full">
         <Nav />
         <Routes>
@@ -24,7 +26,8 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
+        <FooterOption2 />
       </div>
     </BrowserRouter>
   );

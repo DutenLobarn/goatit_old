@@ -7,18 +7,21 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import Logo from "../assets/4.png";
+// import Logo from "../assets/4.png";
 
 export default function Nav() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const location = useLocation();
-  console.log(location.pathname);
 
   return (
-    <div className="flex items-center justify-between py-2 lg:py-4 pl-8 bg-fuchsia-900">
-      <Link to="/">
-        <img className="w-10 h-10 lg:w-12 lg:h-12" src={Logo} alt="logo" />
+    <div className="flex items-center justify-between h-16 py-2 lg:py-4 pl-8 bg-fuchsia-900">
+      <Link
+        to="/"
+        className="text-white text-2xl font-extrabold hover:text-orange-500"
+      >
+        {/* <img className="w-10 h-10 lg:w-12 lg:h-12" src={Logo} alt="logo" /> */}
+        GOAT IT
       </Link>
       <nav className="mr-8">
         <section className="MOBILE-MENU flex lg:hidden">

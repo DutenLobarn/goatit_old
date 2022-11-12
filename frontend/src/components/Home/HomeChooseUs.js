@@ -17,7 +17,7 @@ export default function HomeChooseUs() {
         <img
           src={ChooseUs}
           alt="people and a screen"
-          className="w-56 md:w-1/2 h-60 md:h-58 rounded-tl-3xl rounded-br-3xl"
+          className="w-56 md:w-1/2 h-60 md:h-58 rounded-tl-3xl rounded-br-3xl object-cover"
         />
         <h5 className="my-6 md:my- text-2xl md:text-3xl text-fuchsia-900 font-bold md:w-4/5 md:ml-auto">
           We have the passion!

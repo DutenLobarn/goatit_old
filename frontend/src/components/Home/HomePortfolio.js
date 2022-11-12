@@ -1,5 +1,5 @@
 import React from "react";
-import PortfolioBig from "../../assets/portfolioBig.png";
+// import PortfolioBig from "../../assets/portfolioBig.png";
 import MJ from "../../assets/MJ.png";
 import Enver from "../../assets/portfolioPng2.png";
 import Pebisnis from "../../assets/portfolioPng3.png";

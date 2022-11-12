@@ -6,21 +6,19 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import Logo from "../assets/4.png";
 
 export default function Footer() {
   return (
     <footer>
       <div className="MOBILE-MENU flex lg:hidden flex items-center flex-col bg-slate-800 xl:flex-row">
-        <Link
-          to="/"
-          className="my-3 text-slate-400 hover:text-orange-500 text-2xl font-bold"
-        >
-          GOAT IT
+        <Link to="/" className="my-3">
+          <img className="w-2/12 mx-auto mb-6" src={Logo} alt="logo" />
         </Link>
-        <p className="mb-6 text-slate-400 w-80 text-center">
+        {/* <p className="mb-6 text-slate-400 w-80 text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, vel
           volutpat blandit
-        </p>
+        </p> */}
         <div className="flex w-64 justify-between mb-4">
           <ul>
             <li className="text-slate-400">Services</li>
@@ -73,33 +71,30 @@ export default function Footer() {
         </p>
       </div>
 
-      <div className="DESKTOP-MENU hidden h-56 lg:flex flex-col bg-slate-800">
+      <div className="DESKTOP-MENU hidden h-60 lg:flex flex-col bg-slate-800">
         <div className="flex justify-around h-full">
-          <div className="flex flex-col items-center justify-around">
-            <Link
-              to="/"
-              className="text-slate-400 hover:text-orange-500 text-5xl font-semibold"
-            >
-              GOAT IT
-            </Link>
-            <p className="text-slate-400 w-80 text-center">
+          {/* <div className="flex "> */}
+          <Link to="/" className="text-slate-400 w-80 text-center my-auto">
+            <img className="w-5/12" src={Logo} alt="logo" />
+          </Link>
+          {/* <p className="text-slate-400 w-80 text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus,
               vel volutpat blandit
-            </p>
-          </div>
+            </p> */}
+          {/* </div> */}
           <div className="flex items-center w-2/3 justify-between">
             <div className="h-full w-1/2">
-              <ul className="flex h-1/2 w-full pt-8 justify-around">
+              <ul className="flex h-1/2 w-full pt-8 justify-around text-xl">
                 <li className="peer text-slate-400 cursor-pointer">Services</li>
 
                 <div className="absolute mt-6 hidden peer-hover:flex hover:flex flex-col items-start lg:mr-[160px] xl:mr-[205px] 2xl:mr-[265px]">
-                  <li className="pt-1 text-slate-400 text-sm hover:text-orange-500">
+                  <li className="pt-3 text-slate-400 text-sm hover:text-orange-500">
                     <Link to="/services/apps">- Web and Mobile Apps</Link>
                   </li>
-                  <li className="pt-2 text-slate-400 text-sm hover:text-orange-500">
+                  <li className="pt-3 text-slate-400 text-sm hover:text-orange-500">
                     <Link to="/services/system">- System Development</Link>
                   </li>
-                  <li className="pt-2 text-slate-400 text-sm hover:text-orange-500">
+                  <li className="pt-3 text-slate-400 text-sm hover:text-orange-500">
                     <Link to="/services/consultant">- Hire a Consultant</Link>
                   </li>
                 </div>
