@@ -106,12 +106,12 @@ export default function Nav() {
               >
                 <Link to="/services/consultant">Hire a Consultant</Link>
               </li>
-              <li
+              {/* <li
                 className="border-b border-gray-400 text-2xl my-4 uppercase text-fuchsia-900 hover:text-orange-700"
                 onClick={() => setIsNavOpen(false)}
               >
                 <Link to="/portfolio">Portfolio</Link>
-              </li>
+              </li> */}
               <li
                 className="border-b border-gray-400 text-2xl my-4 uppercase text-fuchsia-900 hover:text-orange-700"
                 onClick={() => setIsNavOpen(false)}
@@ -187,7 +187,7 @@ export default function Nav() {
               </Link>
             </div>
           </div>
-          <Link to="/portfolio">
+          {/* <Link to="/portfolio">
             <button
               className={
                 "text-white hover:bg-orange-700 rounded-3xl w-24 h-8 border " +
@@ -198,7 +198,7 @@ export default function Nav() {
             >
               Portfolio
             </button>
-          </Link>
+          </Link> */}
           <Link to="/about">
             <button
               className={

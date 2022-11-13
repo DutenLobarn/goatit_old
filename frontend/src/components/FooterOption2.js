@@ -30,9 +30,9 @@ export default function Footer() {
                 <Link to="/services/consultant">- Hire a Consultant</Link>
               </li>
             </div>
-            <li className="my-6 hover:text-orange-500">
+            {/* <li className="my-6 hover:text-orange-500">
               <Link to="/portfolio">Portfolio</Link>
-            </li>
+            </li> */}
             <li className="my-6 hover:text-orange-500">
               <Link to="/about">About Us</Link>
             </li>
@@ -95,9 +95,9 @@ export default function Footer() {
                   </li>
                 </div>
 
-                <li className="hover:text-orange-500">
+                {/* <li className="hover:text-orange-500">
                   <Link to="/portfolio">Portfolio</Link>
-                </li>
+                </li> */}
                 <li className="hover:text-orange-500">
                   <Link to="/about">About Us</Link>
                 </li>

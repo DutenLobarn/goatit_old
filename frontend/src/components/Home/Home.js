@@ -2,8 +2,8 @@ import React from "react";
 import Hero from "./Hero";
 import HomeServices from "./HomeServices";
 import HomeChooseUs from "./HomeChooseUs";
-import HomePortfolio from "./HomePortfolio";
-import HomeTestimonial from "./HomeTestimonial";
+// import HomePortfolio from "./HomePortfolio";
+// import HomeTestimonial from "./HomeTestimonial";
 
 export default function Home() {
   return (
@@ -11,8 +11,8 @@ export default function Home() {
       <Hero />
       <HomeServices />
       <HomeChooseUs />
-      <HomePortfolio />
-      <HomeTestimonial />
+      {/* <HomePortfolio /> */}
+      {/* <HomeTestimonial /> */}
     </div>
   );
 }
