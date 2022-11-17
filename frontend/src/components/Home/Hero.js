@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import "tw-elements";
 import HeroLaptop from "../../assets/hero1.png";
 import HeroGuy from "../../assets/heroGuy.png";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
+  const { t } = useTranslation();
   return (
     <div>
       <div className="h-[597px] md:h-[642px] sm:h-[630px]">
@@ -26,15 +28,16 @@ export default function Hero() {
               GOAT IT
             </h1>
             <p className="mt-6 mb-2">
-              <b>CREATE, </b>
-              <b>DESIGN </b>& <b>DEVELOP</b>
+              <b>{t("home.hero.create")}, </b>
+              <b>{t("home.hero.design")} </b>&<b> {t("home.hero.develop")}</b>
             </p>
             <p className="mb-12">
-              <b>WEBSITES</b>, <b>APPS</b> & <b>SYSTEMS</b>
+              <b>{t("home.hero.websites")}</b>, <b>{t("home.hero.apps")}</b> &
+              <b> {t("home.hero.systems")}</b>
             </p>
             <Link to="/contact">
               <button className="bg-fuchsia-900 text-white hover:bg-orange-600 rounded w-40 h-12 lg:text-2xl">
-                Let´s Talk
+                {t("home.hero.btn")}
               </button>
             </Link>
           </div>

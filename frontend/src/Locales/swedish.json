@@ -1,0 +1,121 @@
+{
+  "translation": {
+    "nav": {
+      "homeLink": "Hem",
+      "services": "Tjänster",
+      "apps": "Web och Mobila Appar",
+      "systemDevelopment": "System Utveckling",
+      "consultant": "Hyr en Konsult",
+      "portfolio": "Portfölj",
+      "about": "Om Oss",
+      "contactUs": "Kontakt"
+    },
+    "home": {
+      "hero": {
+        "create": "SKAPAR",
+        "design": "DESIGNAR",
+        "develop": "UTVECKLAR",
+        "websites": "WEBBPLATSER",
+        "apps": "APPAR",
+        "systems": "SYSTEM",
+        "btn": "Kontakt"
+      },
+      "services": {
+        "title": "VÅRA TJÄNSTER",
+        "learnMore": "Läs Mer",
+        "apps": {
+          "title": "Webbplatser & Mobilappar",
+          "description": "Vi designar & skapar skräddarsydda hemsidor & appar."
+        },
+        "development": {
+          "title": "Systemutveckling",
+          "description": "Vi utvecklar system efter era behov med ledande teknologier."
+        },
+        "consultant": {
+          "title": "Hyr en Konsult",
+          "descriptionBigScreen": "Vi förser ert företag med den extra arbetskraft ni behöver.",
+          "description": "Vi förser ert företag med extra arbetskraft."
+        }
+      },
+      "chooseUs": {
+        "title": "VARFÖR VÄLJA OSS",
+        "passion": "Vi har passionen!",
+        "dependable": "Pålitlig och Trovärdig",
+        "collaborate": "Vi samarbetar bra, levererar i tid och får jobbet gjort.",
+        "dedicated": "Dedikerat Team",
+        "results": "Vi strävar efter att ge er bästa möjliga resultat.",
+        "support": "Support Dygnet Runt.",
+        "help": "För vad ni än behöver är vi redo att hjälpa."
+      },
+      "portfolio": {
+        "title": "PORTFÖLJ"
+      }
+    },
+    "footer": {
+      "services": "Tjänster",
+      "apps": "- Webb- och Mobilappar",
+      "system": "- Systemutveckling",
+      "consultant": "- Hyr en Konsult",
+      "portfolio": "Portfölj",
+      "about": "Om Oss",
+      "contactUs": "Kontakt",
+      "copyright": "Copyright © 2022 GOAT IT AB. Alla rättigheter förbehållna"
+    },
+    "services": {
+      "apps": {
+        "title": "WEB OCH MOBILAPPAR",
+        "description": "Behöver ni en webbplats eller en mobilapplikation som ser professionell ut?",
+        "description2": "För en fast månadskostnad hjälper vi er med era idéer. Vi ser till att produkten matchar era krav och specifikationer.",
+        "description3": "Vi utvecklar hemsidor och mobilappar med hjälp av några av de modernaste teknikerna som finns, för att kunna få användarvänliga och snabba webbsidor som är lätta att hantera för användaren.",
+        "contactUs": "Kontakt",
+        "terms": "Alla priser är exklusive moms. Genom att köpa en applikation godkänner ni härmed ",
+        "terms2": "köpvillkoren.",
+        "small": "Liten",
+        "99": "99 Euro/Månaden",
+        "smallCompany": "Perfekt för ett litet företag eller startupen.",
+        "consultation": "Konsultation kostnadsfritt.",
+        "bookBtn": "Boka Konsultation",
+        "hosting": "Gratis hosting",
+        "5pages": "Upp till 5 sidor",
+        "design": "Skräddarsydd design",
+        "responsiv": "Responsiv (passar olika skärmstorlekar)",
+        "changes": "Obegränsade förändringar varje månad",
+        "maintenance": "Regelbundet underhåll",
+        "medium": "Medium",
+        "149": "149 Euro/Månaden",
+        "moreIdeas": "Har du mer idéer/information..?",
+        "10pages": "+ Upp till 10 sidor",
+        "logo": "+ Skräddarsydd logotyp",
+        "big": "Stor",
+        "349": "349 Euro/Månaden",
+        "complex": "För företag som har mer information att visa upp eller mer komplexa behov.",
+        "20pages": "+ Upp till 20 sidor",
+        "advanced": "+ Avancerad funktionalitet eller E-handel"
+      },
+      "system": {
+        "title": "SYSTEMUTVECKLING",
+        "description": "När ni behöver ett datorsystem som är skräddarsytt från grunden för att matcha era krav – då är vi rätt byrå för er.",
+        "description2": "Dessa system kan vara något som interna administrationssystem, kundportaler, webbappar, mobilappar, CMS och mycket mer.",
+        "description3": "Ni har möjlighet att helt anpassa och vi ser till att leverera mjukvara som är helt dynamisk efter era krav.",
+        "contactUs": "Kontakt"
+      },
+      "consultant": {
+        "title": "HYR EN KONSULT",
+        "description": "Behöver ni extra arbetskraft på ditt företag?",
+        "description2": "Vi kan hjälpa er!",
+        "description3": "Vi har erfarenhet av många olika utvecklingsteknologier.",
+        "contactUs": "Kontakt"
+      }
+    },
+    "contactPage": {
+      "description": "Fyll i formuläret så återkommer vårt team till er inom 24 timmar.",
+      "yourName": "Ditt Namn:",
+      "fullName": "För- och Efternamn",
+      "mail": "E-post:",
+      "nameEmail": "Namn@email.com",
+      "message": "Meddelande:",
+      "submit": "Skicka"
+    },
+    "aboutPage": {}
+  }
+}

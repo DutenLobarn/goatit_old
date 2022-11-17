@@ -6,13 +6,15 @@ import {
   faPeopleGroup,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 export default function HomeChooseUs() {
+  const { t } = useTranslation();
   return (
     <>
       <section className="MOBILE-MENU lg:hidden h-5/6 mb-12 flex flex-col items-center sm:mb-20">
         <h3 className="text-3xl md:text-5xl mb-10 text-orange-500 font-semibold">
-          WHY CHOOSE US
+          {t("home.chooseUs.title")}
         </h3>
         <img
           src={ChooseUs}
@@ -20,7 +22,7 @@ export default function HomeChooseUs() {
           className="w-56 md:w-1/2 h-60 md:h-58 rounded-tl-3xl rounded-br-3xl object-cover"
         />
         <h5 className="my-6 md:my- text-2xl md:text-3xl text-fuchsia-900 font-bold md:w-4/5 md:ml-auto">
-          We have the passion!
+          {t("home.chooseUs.passion")}
         </h5>
         <div className="flex w-4/5 items-center md:ml-auto sm:ml-auto">
           <FontAwesomeIcon
@@ -29,10 +31,10 @@ export default function HomeChooseUs() {
           />
           <div>
             <h6 className="text-lg md:text-xl text-fuchsia-900 font-bold">
-              Dependable and Trustworthy
+              {t("home.chooseUs.dependable")}
             </h6>
             <p className="text-fuchsia-900 text-sm md:text-base">
-              We collaborate well, delivers on time and gets the job done.
+              {t("home.chooseUs.collaborate")}
             </p>
           </div>
         </div>
@@ -43,10 +45,10 @@ export default function HomeChooseUs() {
           />
           <div>
             <h6 className="text-lg md:text-xl text-fuchsia-900 font-bold">
-              Dedicated Team
+              {t("home.chooseUs.dedicated")}
             </h6>
             <p className="text-fuchsia-900 text-sm md:text-base">
-              We strive to give you the best possible results.
+              {t("home.chooseUs.results")}
             </p>
           </div>
         </div>
@@ -57,10 +59,10 @@ export default function HomeChooseUs() {
           />
           <div>
             <h6 className="text-lg md:text-xl text-fuchsia-900 font-bold">
-              24/7 Hours Support
+              {t("home.chooseUs.support")}
             </h6>
             <p className="text-fuchsia-900 text-sm md:text-base">
-              For anything u need we are ready to help.
+              {t("home.chooseUs.help")}
             </p>
           </div>
         </div>
@@ -71,7 +73,7 @@ export default function HomeChooseUs() {
       flex-col items-center"
       >
         <h3 className="text-5xl mb-16 text-orange-500 font-semibold">
-          WHY CHOOSE US
+          {t("home.chooseUs.title")}
         </h3>
         <div className="flex h-screen w-5/6 justify-between">
           <img
@@ -81,7 +83,7 @@ export default function HomeChooseUs() {
           />
           <div className="flex flex-col justify-between h-4/5 w-1/2 items-center">
             <h5 className="text-4xl text-fuchsia-900 font-bold mr-12">
-              We have the passion!
+              {t("home.chooseUs.passion")}
             </h5>
             <div className="flex w-4/5 items-center mt-12">
               <FontAwesomeIcon
@@ -90,10 +92,10 @@ export default function HomeChooseUs() {
               />
               <div>
                 <h6 className="text-2xl text-fuchsia-900 font-bold">
-                  Dependable and Trustworthy
+                  {t("home.chooseUs.dependable")}
                 </h6>
                 <p className="text-fuchsia-900 text-lg">
-                  We collaborate well, delivers on time and gets the job done.
+                  {t("home.chooseUs.collaborate")}
                 </p>
               </div>
             </div>
@@ -104,10 +106,10 @@ export default function HomeChooseUs() {
               />
               <div>
                 <h6 className="text-2xl text-fuchsia-900 font-bold">
-                  Dedicated Team
+                  {t("home.chooseUs.dedicated")}
                 </h6>
                 <p className="text-fuchsia-900 text-lg">
-                  We strive to give you the best possible results.
+                  {t("home.chooseUs.results")}
                 </p>
               </div>
             </div>
@@ -118,10 +120,10 @@ export default function HomeChooseUs() {
               />
               <div>
                 <h6 className="text-2xl text-fuchsia-900 font-bold">
-                  24/7 Hours Support
+                  {t("home.chooseUs.support")}
                 </h6>
                 <p className="text-fuchsia-900 text-lg">
-                  For anything u need we are ready to help.
+                  {t("home.chooseUs.help")}
                 </p>
               </div>
             </div>

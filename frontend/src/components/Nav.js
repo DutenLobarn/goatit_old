@@ -7,22 +7,60 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-// import Logo from "../assets/4.png";
+import i18n from "../Locales/i18n";
+import { t } from "i18next";
+import Swedishflag from "../assets/swedishflag.png";
+import Englishflag from "../assets/engelishflag.png";
 
 export default function Nav() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [toggleFlag, setToggleFlag] = useState(false);
+  const [flag, setFlag] = useState(require("../assets/engelishflag.png"));
 
   const location = useLocation();
 
   return (
     <div className="flex items-center justify-between h-16 py-2 lg:py-4 pl-8 bg-fuchsia-900">
+      <div className="">
+        <img
+          className="w-8"
+          src={flag}
+          alt="Choosen flag"
+          onClick={() => setToggleFlag(!toggleFlag)}
+        />
+        {i18n.language === "en" && toggleFlag ? (
+          <img
+            className="w-8 mt-1"
+            src={Swedishflag}
+            alt="Swedishflag"
+            onClick={() => {
+              setToggleFlag(!toggleFlag);
+              setFlag(require("../assets/swedishflag.png"));
+              i18n.changeLanguage("sw");
+            }}
+          />
+        ) : i18n.language === "sw" && toggleFlag ? (
+          <img
+            className="w-8 mt-1"
+            src={Englishflag}
+            alt="Englishflag"
+            onClick={() => {
+              setToggleFlag(!toggleFlag);
+              setFlag(require("../assets/engelishflag.png"));
+              i18n.changeLanguage("en");
+            }}
+          />
+        ) : (
+          ""
+        )}
+      </div>
       <Link
         to="/"
-        className="text-white text-2xl font-extrabold hover:text-orange-500"
+        className="text-white text-2xl font-extrabold hover:text-orange-500 lg:mr-auto lg:pl-8"
       >
-        {/* <img className="w-10 h-10 lg:w-12 lg:h-12" src={Logo} alt="logo" /> */}
         GOAT IT
       </Link>
+
       <nav className="mr-8">
         <section className="MOBILE-MENU flex lg:hidden">
           <div
@@ -83,46 +121,46 @@ export default function Nav() {
                 className="border-b border-gray-400 text-2xl my-4 uppercase text-fuchsia-900 hover:text-orange-700"
                 onClick={() => setIsNavOpen(false)}
               >
-                <Link to="/">Home</Link>
+                <Link to="/">{t("nav.homeLink")}</Link>
               </li>
               <li className="my-4 uppercase text-2xl text-fuchsia-900">
-                <p to="/services">Services ↓</p>
+                <p to="/services">{t("nav.services")} ↓</p>
               </li>
               <li
                 className="border-b border-gray-400 my-4 uppercase text-fuchsia-900 hover:text-orange-700"
                 onClick={() => setIsNavOpen(false)}
               >
-                <Link to="/services/apps">Web and Mobile Apps</Link>
+                <Link to="/services/apps">{t("nav.apps")}</Link>
               </li>
               <li
                 className="border-b border-gray-400 my-4 uppercase text-fuchsia-900 hover:text-orange-700"
                 onClick={() => setIsNavOpen(false)}
               >
-                <Link to="/services/system">System Developments</Link>
+                <Link to="/services/system">{t("nav.systemDevelopment")}</Link>
               </li>
               <li
                 className="border-b border-gray-400 my-4 uppercase text-fuchsia-900 hover:text-orange-700"
                 onClick={() => setIsNavOpen(false)}
               >
-                <Link to="/services/consultant">Hire a Consultant</Link>
+                <Link to="/services/consultant">{t("nav.consultant")}</Link>
               </li>
               {/* <li
                 className="border-b border-gray-400 text-2xl my-4 uppercase text-fuchsia-900 hover:text-orange-700"
                 onClick={() => setIsNavOpen(false)}
               >
-                <Link to="/portfolio">Portfolio</Link>
+                <Link to="/portfolio">{t("nav.portfolio")}</Link>
               </li> */}
               <li
                 className="border-b border-gray-400 text-2xl my-4 uppercase text-fuchsia-900 hover:text-orange-700"
                 onClick={() => setIsNavOpen(false)}
               >
-                <Link to="/about">About Us</Link>
+                <Link to="/about">{t("nav.about")}</Link>
               </li>
               <button
                 className="bg-fuchsia-900 my-4 uppercase text-2xl text-white hover:bg-orange-700 rounded w-40 h-12"
                 onClick={() => setIsNavOpen(false)}
               >
-                <Link to="/contact">Let´s Talk</Link>
+                <Link to="/contact">{t("nav.contactUs")}</Link>
               </button>
             </ul>
           </div>
@@ -136,7 +174,7 @@ export default function Nav() {
                 (location.pathname === "/" ? "border-white" : "border-black")
               }
             >
-              Home
+              {t("nav.homeLink")}
             </button>
           </Link>
           {/* <Link to="/services">
@@ -164,26 +202,26 @@ export default function Nav() {
                   : "border-black")
               }
             >
-              Services
+              {t("nav.services")}
             </button>
             <div className="absolute -ml-12 w-38 rounded-2xl hidden peer-hover:flex hover:flex flex-col items-start bg-white drop-shadow-lg">
               <Link
                 className="p-6 w-full rounded-t-2xl hover:bg-orange-500 hover:text-white"
                 to="/services/apps"
               >
-                Web and Mobile Apps
+                {t("nav.apps")}
               </Link>
               <Link
                 className="p-6 w-full  hover:bg-orange-500 hover:text-white"
                 to="/services/system"
               >
-                System Development
+                {t("nav.systemDevelopment")}
               </Link>
               <Link
                 className="p-6 w-full rounded-b-2xl  hover:bg-orange-500 hover:text-white"
                 to="/services/consultant"
               >
-                Hire a Consultant
+                {t("nav.consultant")}
               </Link>
             </div>
           </div>
@@ -196,7 +234,7 @@ export default function Nav() {
                   : "border-black")
               }
             >
-              Portfolio
+              {t("nav.portfolio")}
             </button>
           </Link> */}
           <Link to="/about">
@@ -208,7 +246,7 @@ export default function Nav() {
                   : "border-black")
               }
             >
-              About Us
+              {t("nav.about")}
             </button>
           </Link>
           <Link to="/contact">
@@ -220,7 +258,7 @@ export default function Nav() {
                   : "border-black")
               }
             >
-              Let´s Talk
+              {t("nav.contactUs")}
             </button>
           </Link>
           <div className="m-auto">

@@ -9,8 +9,10 @@ import {
   faDisplay,
   faPeopleCarryBox,
 } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 export default function HomeServices() {
+  const { t } = useTranslation();
   return (
     <>
       <section className="MOBILE-MENU lg:hidden">
@@ -44,7 +46,7 @@ export default function HomeServices() {
 
           <div className="carousel-inner relative w-full overflow-hidden h-screen">
             <h3 className="text-3xl md:text-5xl my-12 text-orange-500 font-semibold text-center mb-20">
-              OUR SERVICES
+              {t("home.services.title")}
             </h3>
 
             <Link
@@ -60,13 +62,13 @@ export default function HomeServices() {
                   />
                 </div>
                 <h4 className="text-xl md:text-2xl mt-6 mb-5">
-                  Websites & Mobile Apps
+                  {t("home.services.apps.title")}
                 </h4>
                 <p className="font-light md:text-xl mb-10 px-4">
-                  We design and create custom made websites and mobile apps.
+                  {t("home.services.apps.description")}
                 </p>
                 <p className="text-start mx-auto mb-6 hover:text-orange-700">
-                  Learn more
+                  {t("home.services.learnMore")}
                   <FontAwesomeIcon
                     icon={faArrowRight}
                     className="ml-2 text-lg"
@@ -86,13 +88,14 @@ export default function HomeServices() {
                     className="px-7 h-28 w-14"
                   />
                 </div>
-                <h4 className="text-xl md:text-2xl mt-6">System Development</h4>
+                <h4 className="text-xl md:text-2xl mt-6">
+                  {t("home.services.development.title")}
+                </h4>
                 <p className="font-light md:text-xl mb-10 mt-5 px-4">
-                  We develop systems after your needs using leading
-                  technologies.
+                  {t("home.services.development.description")}
                 </p>
                 <p className="text-start mx-auto mb-6 hover:text-orange-700 md:mb-1">
-                  Learn more
+                  {t("home.services.learnMore")}
                   <FontAwesomeIcon
                     icon={faArrowRight}
                     className="ml-2 text-lg"
@@ -113,13 +116,13 @@ export default function HomeServices() {
                   />
                 </div>
                 <h4 className="text-xl mt-6 mb-4 md:text-2xl">
-                  Hire a Consultant
+                  {t("home.services.consultant.title")}
                 </h4>
                 <p className="font-light md:text-xl mb-12 px-4 sm:mb-10">
-                  We provide your buisness with extra labour.
+                  {t("home.services.consultant.description")}
                 </p>
                 <p className="text-start mx-auto hover:text-orange-700">
-                  Learn more
+                  {t("home.services.learnMore")}
                   <FontAwesomeIcon
                     icon={faArrowRight}
                     className="ml-2 text-lg"
@@ -159,7 +162,7 @@ export default function HomeServices() {
 
       <section className="DESKTOP-MENU hidden h-screen lg:flex flex-col justify-evenly">
         <h3 className="text-5xl my-16 text-orange-500 font-semibold text-center">
-          OUR SERVICES
+          {t("home.services.title")}
         </h3>
 
         <div className="h-screen flex">
@@ -172,13 +175,13 @@ export default function HomeServices() {
               <FontAwesomeIcon icon={faMobile} className="ml-2 h-8 w-8" />
             </div>
             <h4 className="text-xl mt-8 mb-4 xl:text-2xl">
-              Websites & Mobile Apps
+              {t("home.services.apps.title")}
             </h4>
-            <p className="font-light mb-12 px-4 xl:text-lg xl:mb-11 lg:mb-8">
-              We design and create custom made websites and mobile apps.
+            <p className="font-light mb-12 text-lg px-4 xl:mb-11 lg:mb-5">
+              {t("home.services.apps.description")}
             </p>
             <p className="text-start mx-auto mb-2 hover:text-orange-700">
-              Learn more
+              {t("home.services.learnMore")}
               <FontAwesomeIcon icon={faArrowRight} className="ml-2 text-lg" />
             </p>
           </Link>
@@ -191,13 +194,13 @@ export default function HomeServices() {
               <FontAwesomeIcon icon={faDisplay} className="p-6 h-16 w-16" />
             </div>
             <h4 className="text-xl mt-8 mb-4 xl:text-2xl">
-              System Development
+              {t("home.services.development.title")}
             </h4>
-            <p className="font-light mb-12 text-lg px-4 xl:text-lg xl:mb-3 lg:mb-5">
-              We develop systems after your needs using leading technologies.
+            <p className="font-light mb-12 text-lg px-4 xl:mb-3 lg:mb-5">
+              {t("home.services.development.description")}
             </p>
             <p className="text-start mx-auto mb-2 hover:text-orange-700 xl:mt-8">
-              Learn more
+              {t("home.services.learnMore")}
               <FontAwesomeIcon icon={faArrowRight} className="ml-2 text-lg" />
             </p>
           </Link>
@@ -212,12 +215,14 @@ export default function HomeServices() {
                 className="p-6 h-16 w-16"
               />
             </div>
-            <h4 className="text-xl mt-8 mb-4 xl:text-2xl">Hire a Consultant</h4>
-            <p className="font-light mb-5 text-lg px-4 xl:text-lg xl:mb-10">
-              We provide your buisness with the extra labour u need.
+            <h4 className="text-xl mt-8 mb-4 xl:text-2xl">
+              {t("home.services.consultant.title")}
+            </h4>
+            <p className="font-light mb-5 text-lg px-4 xl:mb-10">
+              {t("home.services.consultant.descriptionBigScreen")}
             </p>
             <p className="text-start mx-auto mb-2 hover:text-orange-700">
-              Learn more
+              {t("home.services.learnMore")}
               <FontAwesomeIcon icon={faArrowRight} className="ml-2 text-lg" />
             </p>
           </Link>

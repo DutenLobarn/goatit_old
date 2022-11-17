@@ -15,8 +15,10 @@ import MongoDBLogo from "../../assets/mongodb.png";
 import MongooseLogo from "../../assets/mongoose.png";
 import FigmaLogo from "../../assets/figmalogo.png";
 import StrapiLogo from "../../assets/Strapi.png";
+import { useTranslation } from "react-i18next";
 
 export default function ServicesConsultant() {
+  const { t } = useTranslation();
   return (
     <>
       <div className="MOBILE-MENU lg:hidden">
@@ -27,20 +29,20 @@ export default function ServicesConsultant() {
             alt="ConsultantHero img"
           />
           <h2 className="mt-6 text-3xl font-semibold text-orange-500 text-center">
-            HIRE A CONSULTANT
+            {t("services.consultant.title")}
           </h2>
           <p className="mt-6 font-semibold text-lg text-fuchsia-900 p-4 md:mx-8">
-            Do u need extra manpower at your company?
+            {t("services.consultant.description")}
             <br />
             <br />
-            We can help u!
+            {t("services.consultant.description2")}
             <br />
             <br />
-            We have experience in many different development technologies.
+            {t("services.consultant.description3")}
           </p>
           <Link to="/contact">
             <button className="my-10 bg-fuchsia-900 text-white hover:bg-orange-600 rounded w-40 h-12 md:text-xl">
-              Let´s Talk
+              {t("services.consultant.contactUs")}
             </button>
           </Link>
         </div>
@@ -196,20 +198,20 @@ export default function ServicesConsultant() {
           />
           <div className="h-2/3 mr-24 lg:mr-8">
             <h2 className="text-3xl font-semibold text-orange-500 text-start mb-8 2xl:mb-12 2xl:text-5xl">
-              HIRE A CONSULTANT
+              {t("services.consultant.title")}
             </h2>
             <p className="font-semibold text-base text-fuchsia-900 2xl:text-xl">
-              Do u need extra manpower at your company?
+              {t("services.consultant.description")}
               <br />
               <br />
-              We can help u!
+              {t("services.consultant.description2")}
               <br />
               <br />
-              We have experience in many different development technologies.
+              {t("services.consultant.description3")}
             </p>
             <Link to="/contact">
               <button className="my-10 bg-fuchsia-900 text-white rounded w-40 h-12 text-2xl 2xl:my-16 hover:bg-orange-600">
-                Let´s Talk
+                {t("services.consultant.contactUs")}
               </button>
             </Link>
           </div>

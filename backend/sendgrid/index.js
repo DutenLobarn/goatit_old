@@ -4,7 +4,6 @@ const app = express();
 const port = 5000;
 const cors = require("cors");
 require("dotenv").config();
-
 const sgMail = require("@sendgrid/mail");
 
 app.use(express.urlencoded({ extended: true }));
@@ -12,7 +11,6 @@ app.use(cors());
 app.use(express.json());
 
 app.post("/email", (req, res) => {
-  console.log("req.body:", req.body);
   sendMejl(req.body.from, req.body.subject, req.body.html)
     .then((response) => {
       res.send(response);

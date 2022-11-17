@@ -8,8 +8,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Logo from "../assets/1.png";
 import FooterFeather from "../assets/FooterFeather.png";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer>
       <div className="MOBILE-MENU flex lg:hidden flex items-center flex-col shadow-[inset_1px_1px_20px_15px_rgba(98,31,134)] relative z-30">
@@ -18,27 +20,27 @@ export default function Footer() {
         </Link>
         <div className="flex w-64 justify-between mb-4 md:w-3/6 md:text-xl">
           <ul>
-            <li>Services</li>
+            <li>{t("footer.services")}</li>
             <div className="flex flex-col items-start">
               <li className="pt-3 text-sm hover:text-orange-500 md:text-base">
-                <Link to="/services/apps">- Web and Mobile Apps</Link>
+                <Link to="/services/apps">{t("footer.apps")}</Link>
               </li>
               <li className="pt-3 text-sm hover:text-orange-500 md:text-base">
-                <Link to="/services/system">- System Development</Link>
+                <Link to="/services/system">{t("footer.system")}</Link>
               </li>
               <li className="pt-3 text-sm hover:text-orange-500 md:text-base">
-                <Link to="/services/consultant">- Hire a Consultant</Link>
+                <Link to="/services/consultant">{t("footer.consultant")}</Link>
               </li>
             </div>
             {/* <li className="my-6 hover:text-orange-500">
-              <Link to="/portfolio">Portfolio</Link>
+              <Link to="/portfolio">{t("footer.portfolio")}</Link>
             </li> */}
             <li className="my-6 hover:text-orange-500">
-              <Link to="/about">About Us</Link>
+              <Link to="/about">{t("footer.about")}</Link>
             </li>
             <Link to="/contact">
               <button className="flex justify-center items-center bg-fuchsia-900 hover:bg-orange-500 text-white rounded w-24 h-8 md:w-28 md:h-10">
-                Let´s Talk
+                {t("footer.contactUs")}
               </button>
             </Link>
           </ul>
@@ -63,9 +65,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <p className="mb-6 text-xs">
-          Copyright © 2022 GOAT IT AB. All Rights Reserved
-        </p>
+        <p className="mb-6 text-xs">{t("footer.copyright")}</p>
         <img
           className="w-8/12 absolute bottom-0 right-0 -z-40"
           src={FooterFeather}
@@ -81,25 +81,27 @@ export default function Footer() {
           <div className="flex items-center w-2/3 justify-between">
             <div className="h-full w-1/2">
               <ul className="flex h-1/2 w-full pt-8 justify-around text-xl font-bold text-black">
-                <li className="peer cursor-pointer">Services</li>
+                <li className="peer cursor-pointer">{t("footer.services")}</li>
 
                 <div className="absolute mt-6 hidden peer-hover:flex hover:flex flex-col items-start lg:mr-[160px] xl:mr-[205px] 2xl:mr-[265px]">
                   <li className="pt-3 text-sm hover:text-orange-500">
-                    <Link to="/services/apps">- Web and Mobile Apps</Link>
+                    <Link to="/services/apps">{t("footer.apps")}</Link>
                   </li>
                   <li className="pt-3 text-sm hover:text-orange-500">
-                    <Link to="/services/system">- System Development</Link>
+                    <Link to="/services/system">{t("footer.system")}</Link>
                   </li>
                   <li className="pt-3 text-sm hover:text-orange-500">
-                    <Link to="/services/consultant">- Hire a Consultant</Link>
+                    <Link to="/services/consultant">
+                      {t("footer.consultant")}
+                    </Link>
                   </li>
                 </div>
 
                 {/* <li className="hover:text-orange-500">
-                  <Link to="/portfolio">Portfolio</Link>
+                  <Link to="/portfolio">{t("footer.portfolio")}</Link>
                 </li> */}
                 <li className="hover:text-orange-500">
-                  <Link to="/about">About Us</Link>
+                  <Link to="/about">{t("footer.about")}</Link>
                 </li>
               </ul>
 
@@ -127,12 +129,10 @@ export default function Footer() {
             <div className="flex flex-col h-full justify-around mr-10 items-center mb-4">
               <Link to="/contact">
                 <button className="bg-fuchsia-900 text-white hover:bg-orange-500 text-3xl uppercase font-semibold rounded w-52 h-12">
-                  Let´s Talk
+                  {t("footer.contactUs")}
                 </button>
               </Link>
-              <p className="text-slate-800 text-xs">
-                Copyright © 2022 GOAT IT AB. All Rights Reserved
-              </p>
+              <p className="text-slate-800 text-xs">{t("footer.copyright")}</p>
             </div>
           </div>
         </div>

@@ -1,0 +1,121 @@
+{
+  "translation": {
+    "nav": {
+      "homeLink": "Home",
+      "services": "Services",
+      "apps": "Web and Mobile Apps",
+      "systemDevelopment": "System Developments",
+      "consultant": "Hire a Consultant",
+      "portfolio": "Portfolio",
+      "about": "About Us",
+      "contactUs": "Let´s Talk"
+    },
+    "home": {
+      "hero": {
+        "create": "CREATE",
+        "design": "DESIGN",
+        "develop": "DEVELOP",
+        "websites": "WEBSITES",
+        "apps": "APPS",
+        "systems": "SYSTEMS",
+        "btn": "Let´s Talk"
+      },
+      "services": {
+        "title": "OUR SERVICES",
+        "learnMore": "Learn More",
+        "apps": {
+          "title": "Websites & Mobile Apps",
+          "description": "We design and create custom made websites and mobile apps."
+        },
+        "development": {
+          "title": "System Development",
+          "description": "We develop systems after your needs using leading technologies."
+        },
+        "consultant": {
+          "title": "Hire a Consultant",
+          "descriptionBigScreen": "We provide your buisness with the extra labour u need.",
+          "description": "We provide your buisness with extra labour."
+        }
+      },
+      "chooseUs": {
+        "title": "WHY CHOOSE US",
+        "passion": "We have the passion!",
+        "dependable": "Dependable and Trustworthy",
+        "collaborate": "We collaborate well, delivers on time and gets the job done.",
+        "dedicated": "Dedicated Team",
+        "results": "We strive to give you the best possible results.",
+        "support": "24/7 Hours Support",
+        "help": "For anything u need we are ready to help."
+      },
+      "portfolio": {
+        "title": "PORTFOLIO"
+      }
+    },
+    "footer": {
+      "services": "Services",
+      "apps": "- Web and Mobile Apps",
+      "system": "- System Development",
+      "consultant": "- Hire a Consultant",
+      "portfolio": "Portfolio",
+      "about": "About Us",
+      "contactUs": "Let´s Talk",
+      "copyright": "Copyright © 2022 GOAT IT AB. All Rights Reserved"
+    },
+    "services": {
+      "apps": {
+        "title": "WEB AND MOBILE APPS",
+        "description": "Do u need a website or a mobile application that looks professional?",
+        "description2": "For a fixed monthly cost we help you with your ideas. We make sure that the product matches your demands and specifications.",
+        "description3": "We develop websites and mobile apps using some of the most modern technologies that exist, to be able to get user-friendly and fast webpages that are easy to handle for the user.",
+        "contactUs": "Let´s Talk",
+        "terms": "All prices are exclusive of VAT. By purchasing an application, you hereby agree to the ",
+        "terms2": "terms of purchase.",
+        "small": "Small",
+        "99": "99 Euro/Month",
+        "smallCompany": "Perfect for a small company or the startup.",
+        "consultation": "Consultation free of charge.",
+        "bookBtn": "Book Consultation",
+        "hosting": "Free hosting",
+        "5pages": "Up to 5 pages",
+        "design": "Custom made design",
+        "responsiv": "Responsiv (fits different screen sizes)",
+        "changes": "Unlimited changes every month",
+        "maintenance": "Regularly maintenance",
+        "medium": "Medium",
+        "149": "149 Euro/Month",
+        "moreIdeas": "Do u have more ideas/information..?",
+        "10pages": "+ Up to 10 pages",
+        "logo": "+ Custom made logo",
+        "big": "Big",
+        "349": "349 Euro/Month",
+        "complex": "For companies who have more information to display or more complex needs.",
+        "20pages": "+ Up to 20 pages",
+        "advanced": "+ Advanced functionality or E-commerce"
+      },
+      "system": {
+        "title": "SYSTEM DEVELOPMENT",
+        "description": "When you need a computer system that is custom made from the ground up to match your requirements - then we are the right agency for you.",
+        "description2": "These systems can be something like internal administration systems, customer portals, web apps, mobile apps, CMS and much more.",
+        "description3": "You have the possibility to fully customize and we make sure to deliver software that is completely dynamic to your requirements.",
+        "contactUs": "Let´s Talk"
+      },
+      "consultant": {
+        "title": "HIRE A CONSULTANT",
+        "description": "Do u need extra manpower at your company?",
+        "description2": "We can help u!",
+        "description3": "We have experience in many different development technologies.",
+        "contactUs": "Let´s Talk"
+      }
+    },
+    "contactPage": {
+      "description": "Fill in the form and our team will respond to you within 24 hours.",
+      "yourName": "Your Name:",
+      "fullName": "Full Name",
+      "mail": "Mail:",
+      "nameEmail": "Name@email.com",
+      "message": "Message:",
+      "submit": "Submit"
+    },
+    "aboutPage": {}
+  }
+}

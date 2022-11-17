@@ -4,12 +4,14 @@ import MJ from "../../assets/MJ.png";
 import Enver from "../../assets/portfolioPng2.png";
 import Pebisnis from "../../assets/portfolioPng3.png";
 import ArchiWeb from "../../assets/portfolioPng4.png";
+import { useTranslation } from "react-i18next";
 
 export default function HomePortfolio() {
+  const { t } = useTranslation();
   return (
     <section className="h-3/5 flex flex-col items-center lg:mb-20">
       <h3 className="text-3xl md:text-5xl mb-10 text-orange-500 font-semibold">
-        Portfolio
+        {t("home.portfolio.title")}
       </h3>
       <div
         // style={{

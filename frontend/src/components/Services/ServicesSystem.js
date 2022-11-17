@@ -5,8 +5,10 @@ import NodeLogo from "../../assets/node.png";
 import ExpressLogo from "../../assets/express.png";
 import MongoDBLogo from "../../assets/mongodb.png";
 import MongooseLogo from "../../assets/mongoose.png";
+import { useTranslation } from "react-i18next";
 
 export default function ServicesSystem() {
+  const { t } = useTranslation();
   return (
     <>
       <div className="MOBILE-MENU lg:hidden">
@@ -17,24 +19,20 @@ export default function ServicesSystem() {
             alt="SystemHero img"
           />
           <h2 className="mt-6 text-3xl font-semibold text-orange-500 text-center">
-            SYSTEM DEVELOPMENT
+            {t("services.system.title")}
           </h2>
           <p className="mt-6 font-semibold text-lg text-fuchsia-900 p-4">
-            When you need a computer system that is custom made from the ground
-            up to match your requirements - then we are the right agency for
-            you.
+            {t("services.system.description")}
             <br />
             <br />
-            These systems can be something like internal administration systems,
-            customer portals, web apps, mobile apps, CMS and much more.
+            {t("services.system.description2")}
             <br />
             <br />
-            You have the possibility to fully customize and we make sure to
-            deliver software that is completely dynamic to your requirements.
+            {t("services.system.description3")}
           </p>
           <Link to="/contact">
             <button className="my-10 bg-fuchsia-900 text-white hover:bg-orange-600 rounded w-40 h-12 md:text-xl">
-              Let´s Talk
+              {t("services.system.contactUs")}
             </button>
           </Link>
         </div>
@@ -110,25 +108,20 @@ export default function ServicesSystem() {
           />
           <div className="h-2/3">
             <h2 className="text-3xl font-semibold text-orange-500 text-start mb-8 2xl:mb-12 2xl:text-5xl">
-              SYSTEM DEVELOPMENT
+              {t("services.system.title")}
             </h2>
             <p className="font-semibold text-base text-fuchsia-900 2xl:text-xl">
-              When you need a computer system that is custom made from the
-              ground up to match your requirements - then we are the right
-              agency for you.
+              {t("services.system.description")}
               <br />
               <br />
-              These systems can be something like internal administration
-              systems, customer portals, web apps, mobile apps, CMS and much
-              more.
+              {t("services.system.description2")}
               <br />
               <br />
-              You have the possibility to fully customize and we make sure to
-              deliver software that is completely dynamic to your requirements.
+              {t("services.system.description3")}
             </p>
             <Link to="/contact">
               <button className="my-10 bg-fuchsia-900 text-white rounded w-40 h-12 text-2xl 2xl:my-16 hover:bg-orange-600">
-                Let´s Talk
+                {t("services.system.contactUs")}
               </button>
             </Link>
           </div>
