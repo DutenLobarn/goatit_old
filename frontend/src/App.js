@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import FooterOption2 from "./components/FooterOption2";
 import Home from "./components/Home/Home";
 import ServicesApps from "./components/Services/ServicesApps";
+import PuschaseTerms from "./components/Services/PuschaseTerms";
 import ServicesSystem from "./components/Services/ServicesSystem";
 import ServicesConsultant from "./components/Services/ServicesConsultant";
 // import Portfolio from "./components/Portfolio";
@@ -20,6 +21,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services/apps" element={<ServicesApps />} />
+          <Route path="/purchase-conditions" element={<PuschaseTerms />} />
           <Route path="/services/system" element={<ServicesSystem />} />
           <Route path="/services/consultant" element={<ServicesConsultant />} />
           {/* <Route path="/portfolio" element={<Portfolio />} /> */}

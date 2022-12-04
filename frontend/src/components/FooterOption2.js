@@ -16,7 +16,12 @@ export default function Footer() {
     <footer>
       <div className="MOBILE-MENU flex lg:hidden flex items-center flex-col shadow-[inset_1px_1px_20px_15px_rgba(98,31,134)] relative z-30">
         <Link to="/" className="my-3 mt-6">
-          <img className="w-2/12 mx-auto mb-6" src={Logo} alt="logo" />
+          <img
+            className="w-2/12 mx-auto mb-6"
+            src={Logo}
+            alt="logo"
+            aria-label="GoatIT logo"
+          />
         </Link>
         <div className="flex w-64 justify-between mb-4 md:w-3/6 md:text-xl">
           <ul>

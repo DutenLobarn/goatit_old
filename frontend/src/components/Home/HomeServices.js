@@ -58,7 +58,7 @@ export default function HomeServices() {
                   <FontAwesomeIcon icon={faLaptop} className="h-12 w-16 mr-3" />
                   <FontAwesomeIcon
                     icon={faMobile}
-                    className="ml-2 h-7 h-8 md:ml-1"
+                    className="ml-2 h-8 md:ml-1"
                   />
                 </div>
                 <h4 className="text-xl md:text-2xl mt-6 mb-5">
